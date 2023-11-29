@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:hive/hive.dart';
-import 'package:online_shop/controllers/product_provider.dart';
+import 'package:online_shop/providers/product_provider.dart';
 import 'package:online_shop/models/sneaker_model.dart';
 import 'package:online_shop/services/helper.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
@@ -49,6 +49,7 @@ class _ProductPageState extends State<ProductPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xff1A2947),
         body: FutureBuilder<Sneakers>(
             future: _sneaker,
             builder: (context, snapshot) {

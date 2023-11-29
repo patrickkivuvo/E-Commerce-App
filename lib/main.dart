@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:online_shop/controllers/mainscreen_provider.dart';
-import 'package:online_shop/controllers/product_provider.dart';
+import 'package:online_shop/providers/mainscreen_provider.dart';
+import 'package:online_shop/providers/product_provider.dart';
 import 'package:online_shop/providers/cart_provider.dart';
-import 'package:online_shop/views/ui/mainscreen.dart';
+import 'package:online_shop/views/ui/welcome.dart';
 import 'package:provider/provider.dart';
 
 // entrypoint of the app
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
               ),
 
               // sets the homescreen of the app
-              home: MainScreen(),
+              home: const Welcome(),
             ),
           );
         });

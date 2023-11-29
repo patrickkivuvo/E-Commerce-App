@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:online_shop/controllers/product_provider.dart';
+import 'package:online_shop/providers/product_provider.dart';
 import 'package:online_shop/models/sneaker_model.dart';
 import 'package:online_shop/views/shared/appstyle.dart';
 import 'package:online_shop/views/shared/new_shoes.dart';
@@ -22,6 +22,7 @@ class HomeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var productNotifier = Provider.of<ProductNotifier>(context);
     return Column(
+      
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
@@ -70,7 +71,7 @@ class HomeWidget extends StatelessWidget {
                 children: [
                   Text(
                     "Latest Shoes",
-                    style: appstyle(24, Colors.black, FontWeight.bold),
+                    style: appstyle(24, Colors.white, FontWeight.bold),
                   ),
                   GestureDetector(
                     onTap: () {
@@ -85,11 +86,12 @@ class HomeWidget extends StatelessWidget {
                       children: [
                         Text(
                           "Show All",
-                          style: appstyle(22, Colors.black, FontWeight.w500),
+                          style: appstyle(22, Colors.white, FontWeight.w500),
                         ),
                         const Icon(
                           AntDesign.caretright,
                           size: 20,
+                          color: Colors.white,
                         )
                       ],
                     ),

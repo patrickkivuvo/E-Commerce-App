@@ -8,6 +8,7 @@ class BotomNavWidget extends StatelessWidget {
   final IconData? icon;
   @override
   Widget build(BuildContext context) {
+    
     return GestureDetector(
       onTap: onTap,
       child:  SizedBox(

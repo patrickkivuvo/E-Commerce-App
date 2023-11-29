@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     
     return Scaffold(
-      backgroundColor: const Color(0xFFE2E2E2),
+      backgroundColor: const Color(0xff1A2947),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: Stack(

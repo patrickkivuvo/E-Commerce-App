@@ -36,7 +36,7 @@ class CartPage extends StatelessWidget {
 
     cart = cartData.reversed.toList();
     return Scaffold(
-      backgroundColor: const Color(0xFFE2E2E2),
+      backgroundColor: const Color(0xff1A2947),
       body: Padding(
         padding: const EdgeInsets.all(12),
         child: Stack(
@@ -53,12 +53,12 @@ class CartPage extends StatelessWidget {
                   },
                   child: const Icon(
                     AntDesign.close,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
                 Text(
                   "My Cart",
-                  style: appstyle(36, Colors.black, FontWeight.bold),
+                  style: appstyle(36, Colors.white, FontWeight.bold),
                 ),
                 const SizedBox(
                   height: 10,
